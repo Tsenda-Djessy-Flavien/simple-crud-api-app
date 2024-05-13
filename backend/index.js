@@ -4,6 +4,7 @@ const Product = require("../models/product.model");
 const dotenv = require("dotenv").config();
 const app = express();
 
+// middleware qui permet de traiter les données de la request
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
